@@ -1,11 +1,18 @@
 import React from "react";
 import "./Navbar.css";
+import logo1 from '../../assets/logo1.png'
 import { FaUserCircle, FaSearch, FaBars, FaThLarge } from "react-icons/fa"; // 🔹 All icons imported
 
 const Navbar = () => {
   return (
     <nav className="container">
-      <h1 className="Logo">NexG Health</h1>
+
+                  <img src={logo1} alt="Nex-G Logo" className="footer-logo1" />
+                    {/* <h1>Nex-G Health</h1> */}
+
+
+            
+      {/* <h1 className="Logo">Nex-G Health</h1> */}
 
       <ul>
         {/* Profile Icon */}

@@ -28,28 +28,38 @@ nav ul li{
 
 */
 
+.footer-logo1{
+    width: 82px;
+    height: 63px;
+}
+
 .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 60px;
-  background: rgb(40, 66, 99);
+  padding: 1px 60px;
+  background: rgb(242, 244, 247);
+  /* background: rgb(212, 222, 235); */
+  
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   font-family: 'Poppins', sans-serif;
+  position: sticky;
+  top: 0;
+  
 }
 
 /* Logo */
-.Logo {
+/* .Logo {
   font-size: 1.8rem;
   color: #e6e6e6;
   font-weight: 600;
-}
+} */
 
 /* Nav List */
 ul {
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 30px;
   list-style: none;
   margin: 0;
 }
@@ -84,7 +94,7 @@ li:hover {
 /* Icons */
 .nav-icon {
   font-size: 1.4rem;
-  color: #e6e6e6;
+  color: #aeb8f0;
   cursor: pointer;
   transition: transform 0.3s ease, color 0.3s ease;
 }

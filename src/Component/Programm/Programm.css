@@ -21,6 +21,7 @@
 
 .programm {
   display: grid;
+  
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 40px;
   text-align: center;
@@ -37,7 +38,7 @@
   width: 80px;
   height: 80px;
   margin-bottom: 15px;
-  filter: invert(38%) sepia(80%) saturate(537%) hue-rotate(176deg) brightness(93%) contrast(90%);
+  /* filter: invert(38%) sepia(80%) saturate(537%) hue-rotate(176deg) brightness(93%) contrast(90%); */
 }
 
 .programms h4 {
@@ -88,6 +89,7 @@
     margin: 10px auto 20px;
     line-height: 1.4 ; */
     display: block;
+    font-size: larger;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
