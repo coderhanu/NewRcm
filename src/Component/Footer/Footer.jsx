@@ -73,7 +73,7 @@ const Footer = () => {
         <div className="footer-left">
           <div className="logo">
             <img src={logo1} alt="Nex-G Logo" className="footer-logo" />
-            <h2>Nex-G Health</h2>
+            <h2>NexG Health USA LLC</h2>
           </div>
           <p className="tagline">Excellence Redefined</p>
 
