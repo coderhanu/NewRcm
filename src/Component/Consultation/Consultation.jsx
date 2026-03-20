@@ -49,8 +49,11 @@ const Consultation = () => {
               <FaPhoneAlt className="icon" /> +1 205 609 9829
             </p>
             <p>
-              <FaEnvelope className="icon" /> info@nexg.in
+              <FaEnvelope className="icon" /> provider-relations@nexghealth.com
             </p>
+            {/* <p>
+              <FaEnvelope className="icon" /> info@nexg.in
+            </p> */}
           </div>
         </div>
 

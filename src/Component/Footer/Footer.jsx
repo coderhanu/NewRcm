@@ -128,7 +128,8 @@ const Footer = () => {
             </p>
             {/* <p><strong>FAX:</strong><br />+1 307-288-6459</p> */}
             <p>
-              <strong>Email: info@nexg.in</strong>
+              <strong>Email: provider-relations@nexghealth.com</strong>
+              {/* <strong>Email: info@nexg.in</strong> */}
               <br />
               <br />
             </p>
