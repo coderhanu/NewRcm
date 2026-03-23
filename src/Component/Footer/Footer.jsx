@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/logo.jpeg";
+import logo from "../../assets/logo.png";
 import {
   Search,
   Play,
@@ -35,7 +35,7 @@ const Footer = () => {
                 className="h-10 w-auto object-contain"
               />
             </div>
-            <span className="text-xl font-bold">NexGHealth</span>
+            -<span className="text-xl font-bold">NexGHealth</span>
           </div>
           <p className="text-slate-400 text-sm">
             AI-powered Revenue Cycle Management for modern healthcare
