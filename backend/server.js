@@ -822,6 +822,51 @@ const db1 = require("./config/db1"); // healthcare_rcm
 /* ================= JWT SECRET ================= */
 const JWT_SECRET = process.env.JWT_SECRET || "doctor_secret_key_123";
 
+// /* ================= JWT SECRET ================= */
+// const JWT_SECRET = process.env.JWT_SECRET || "doctor_secret_key_123";
+
+/* ==================================================
+   📌 CONSULTATION API
+================================================== */
+/* ==================================================
+   📌 CONSULTATION API (🔥 FIXED)
+================================================== */
+app.post("/api/saveConsultation", (req, res) => {
+  console.log("📥 Incoming Data:", req.body);
+
+  const { fullname, name, email, phone, service } = req.body;
+
+  const finalName = fullname || name;
+
+  if (!finalName || !email || !phone) {
+    return res.status(400).json({
+      success: false,
+      message: "All fields required",
+    });
+  }
+
+  const sql = `
+    INSERT INTO consultations (fullname, email, phone, service)
+    VALUES (?, ?, ?, ?)
+  `;
+
+  db.query(sql, [finalName, email, phone, service || null], (err, result) => {
+    if (err) {
+      console.error("❌ DB ERROR:", err);
+      return res.status(500).json({
+        success: false,
+        message: err.message,
+      });
+    }
+
+    console.log("✅ Data Inserted:", result);
+
+    res.json({
+      success: true,
+      message: "Data Saved Successfully!",
+    });
+  });
+});
 /* ==================================================
    📊 GET ALL PROVIDERS (Dashboard)
 ================================================== */
