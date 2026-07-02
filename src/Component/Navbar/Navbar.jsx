@@ -219,11 +219,11 @@ const Navbar = () => {
 
   // Menu items
   const menuItems = [
-    { name: "Platform", path: "/platform" },
+    // { name: "Platform", path: "/platform" },
     { name: "Solutions", path: "/solutions" },
     { name: "Services", path: "/services" },
-    { name: "Resources", path: "/resources" },
-    { name: "Pricing", path: "/pricing" },
+    // { name: "Resources", path: "/resources" },
+    // { name: "Pricing", path: "/pricing" },
     { name: "Company", path: "/company" },
   ];
 
